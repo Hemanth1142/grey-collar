@@ -1,0 +1,89 @@
+<header id="header"> </header>
+<main>
+  <div class="login-sec">
+    <div class="container">
+      <div class="login-blk">
+        <div class="login-lt"> <a href="#"><img src="../../../assets/images/logo.png"></a>
+          <p>Changing the way <br>
+            <strong>Working People</strong><br>
+            Find Work</p>
+        </div>
+        <div class="login-rt sign-up">
+          <div class="top-part">
+            <h2>Create Your Account</h2>
+          </div>
+          <form class="login-form" [formGroup]="signUpForm"  (ngSubmit)="onSubmit()" >
+            <div class="d-flex form-check-inline justify-content-center mr-0">
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" formControlName="user_type" id="customRadio" name="user_type" value="Employee" checked>
+                <label class="custom-control-label" for="customRadio">Employee</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" formControlName="user_type" id="customRadio1" name="user_type" value="Employer">
+                <label class="custom-control-label" for="customRadio1">Employer</label>
+              </div>
+            </div>
+            <div class="form-row justify-content-between">
+              <div class="form-group">
+                <label for="exampleInputEmail1"  class="bmd-label-floating">Name  <sup>*</sup></label>
+                <input type="text" class="form-control" formControlName="name" name="name"  id="exampleInputEmail1" >
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail2" class="bmd-label-floating">Email  <sup>*</sup></label>
+                <input type="email" class="form-control" formControlName="email" id="exampleInputEmail2">
+                <span *ngIf="email.invalid" >Please enter email</span>
+                </div>  
+            </div>
+            <div class="form-row justify-content-between">
+                <div class="form-group">
+                  <label for="exampleInputEmail3" class="bmd-label-floating">Date of Birth  <sup>*</sup></label>
+                  <input type="text" class="form-control" formControlName="dob" id="exampleInputEmail3">
+                </div>
+              
+              <div class="form-group">
+                <select data-tags="true" data-placeholder="City" formControlName="gender" data-allow-clear="true" class="city-list">
+                          <option value="CI">Gender</option>    
+                          <option value="CI">Male</option>
+                          <option value="AL">Female</option>
+                        </select>
+              </div>
+            </div>
+            <div class="form-row justify-content-between">
+                <div class="form-group">
+                  <label for="exampleInputEmail4" class="bmd-label-floating">Password <sup>*</sup></label>
+                  <input type="password" class="form-control" formControlName="password" id="exampleInputEmail4">
+                  
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail5" class="bmd-label-floating">Confirm Password <sup>*</sup></label>
+                  <input type="password" class="form-control" formControlName= "confirmPassword" id="exampleInputEmail5">
+                  
+                </div>
+              
+              
+            </div>
+            <div class="form-row btn-row">
+              <div class="form-group" > <a (click)="onSubmit()" class="cmn-btn">Sign Up</a> </div>
+            </div>
+            <div class="form-row account">
+              <div class="form-group"><p>Already have an account? <a href="#">Sign In here</a></p></div>
+              <div class="custom-control custom-checkbox">
+                      <input type="checkbox"  class="custom-control-input" formControlName="terms" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">I Agree with <a href="#">Terms and Conditions</a>
+and <a href="#">Privacy Policy</a></label>
+                    </div>
+            </div>
+          </form>
+          <div class="signup-row"> <a href="#" class="cmn-btn fb-btn"> <i class="fab fa-facebook-square"></i> Sign up with facebook </a> <a href="#" class="cmn-btn ggl-btn"> <i class="fab fa-google"></i> Sign up with Google </a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Footer Start -->
+<div class="login-ftr">
+  <div class="copyright">
+    <p>© 2019 Copyright Blucollr.com. All Rights Reserved.</p>
+  </div>
+</div>

@@ -1,505 +1,549 @@
-<main class="middle-sec">
+<header id="header" class="main-header header fixed-top">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between">
+      <div>
+        <a href="#">
+          <img src="../../../assets/images/logo.png" alt="BluCollr">
+        </a>
+      </div>
+      <div>
+        <nav class="main-nav">
+          <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Find a Job</a></li>
+            <li><a href="#">Find an Employee</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <div class="right-top d-flex">
+          <a href="#" class="btn-sm btn-orange">Post Job</a>
+          <a routerLink="/login" class="btn-sm">Login</a>
+          <a routerLink="/signup" class="btn-sm">Signup</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="banner-section">
+    <img src="../../../assets/images/banner-img.jpg" alt="" class="img-fluid banner-img-sec">
+    <div class="banner-content">
+      <h1><span>Changing the Way</span> Working People Find Work</h1>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for Job Opportunities and Employees Here...">
+        <div class="city-search">
+          <select data-tags="true" data-placeholder="City" data-allow-clear="true" class="city-list">
+            <option value="CI">City</option>
+            <option value="AL">Ahmedabad</option>
+            <option value="WY">Ahmedabad 1</option>
+            <option value="WY">Ahmedabad 2</option>
+            <option value="WY">Ahmedabad 3</option>    
+            <option value="WY">Ahmedabad 4</option>      
+          </select>
+        </div>
+        <span class="input-group-btn">
+          <button class="btn btn-default cmn-animate-btn" type="submit">Find A Job</button>
+        </span>
+      </div>
+    </div>
+    <div class="round-shape"></div>
+  </section>
+
+  <section class="industry-section">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3 pr-0 left-section">
-          <div class="filter-block">
-            <div class="heading-title">
-              <h2>Filter</h2>
-              <div class="refresh-icon">
-                <a href="#"><img src="assets/images/refresh-icon.png" alt=""></a>
-              </div>
+      <div class="heading text-center">
+        <h2>What’s Your Industry?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet</p>
+      </div>
+      <div class="industry-content">
+        <ul class="industry-list">
+          <li>
+            <div class="icon-rounded">
+              <i><img src="../../../assets/images/indu-1.png" alt=""></i>
             </div>
-            <div class="widget">
-              <div>
-                <a class="title" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Cities
-                </a>
-                <div class="collapse show" id="collapseExample">
-                  <div class="form-group">
-                    <span class="icon-search"></span>
-                    <input type="text" class="form-control" placeholder="Search Here (Autosuggest by City)">
-                  </div>
-                  <div class="filter-chack-list">
-                    <div class="custom-control custom-checkbox right-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck1">
-                      <label class="custom-control-label" for="customCheck1">New York</label>
-                    </div>
-                    <div class="custom-control custom-checkbox right-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck2">
-                      <label class="custom-control-label" for="customCheck2">Los Angeles</label>
-                    </div>
-                    <div class="custom-control custom-checkbox right-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck3">
-                      <label class="custom-control-label" for="customCheck3">Chicago</label>
-                    </div>
-                    <div class="custom-control custom-checkbox right-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck4">
-                      <label class="custom-control-label" for="customCheck4">Phoenix</label>
-                    </div>
-                    <div class="custom-control custom-checkbox right-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck5">
-                      <label class="custom-control-label" for="customCheck5">Philadelphia</label>
-                    </div>
-                  </div>
+            <h3>Agriculture & Forestry</h3>
+            <div class="other-text">
+              <p>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minm veniam.</p>
+              <ul>
+                <li>Apiarist</li>
+                <li>Arborist</li>
+                <li>Dairy/beef farmer</li>
+                <li>Pig farmer</li>
+                <li>Forestry scientist</li>
+                <li>Market gardener</li>
+                <li>Poultry farmer</li>
+                <li>Viticulturist</li> 
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="icon-rounded">
+              <i><img src="../../../assets/images/indu-2.png" alt=""></i>
+            </div>
+            <h3>Construction</h3>
+            <div class="other-text">
+              <p>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minm veniam.</p>
+              <ul>
+                <li>Apiarist</li>
+                <li>Arborist</li>
+                <li>Dairy/beef farmer</li>
+                <li>Pig farmer</li>
+                <li>Forestry scientist</li>
+                <li>Market gardener</li>
+                <li>Poultry farmer</li>
+                <li>Viticulturist</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="icon-rounded">
+              <i><img src="../../../assets/images/indu-3.png" alt=""></i>
+            </div>
+            <h3>Food & Beverage Service</h3>
+            <div class="other-text">
+              <p>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minm veniam.</p>
+              <ul>
+                <li>Apiarist</li>
+                <li>Arborist</li>
+                <li>Dairy/beef farmer</li>
+                <li>Pig farmer</li>
+                <li>Forestry scientist</li>
+                <li>Market gardener</li>
+                <li>Poultry farmer</li>
+                <li>Viticulturist</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="icon-rounded">
+              <i><img src="../../../assets/images/indu-4.png" alt=""></i>
+            </div>
+            <h3>Manufacturing</h3>
+            <div class="other-text">
+              <p>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minm veniam.</p>
+              <ul>
+                <li>Apiarist</li>
+                <li>Arborist</li>
+                <li>Dairy/beef farmer</li>
+                <li>Pig farmer</li>
+                <li>Forestry scientist</li>
+                <li>Market gardener</li>
+                <li>Poultry farmer</li>
+                <li>Viticulturist</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="icon-rounded">
+              <i><img src="../../../assets/images/indu-5.png" alt=""></i>
+            </div>
+            <h3>Mechanics</h3>
+            <div class="other-text">
+              <p>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minm veniam.</p>
+              <ul>
+                <li>Apiarist</li>
+                <li>Arborist</li>
+                <li>Dairy/beef farmer</li>
+                <li>Pig farmer</li>
+                <li>Forestry scientist</li>
+                <li>Market gardener</li>
+                <li>Poultry farmer</li>
+                <li>Viticulturist</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="icon-rounded">
+              <i><img src="../../../assets/images/indu-6.png" alt=""></i>
+            </div>
+            <h3>Metal Product manufacturing</h3>
+            <div class="other-text">
+              <p>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minm veniam.</p>
+              <ul>
+                <li>Apiarist</li>
+                <li>Arborist</li>
+                <li>Dairy/beef farmer</li>
+                <li>Pig farmer</li>
+                <li>Forestry scientist</li>
+                <li>Market gardener</li>
+                <li>Poultry farmer</li>
+                <li>Viticulturist</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="icon-rounded">
+              <i><img src="../../../assets/images/indu-7.png" alt=""></i>
+            </div>
+            <h3>Mining</h3>
+            <div class="other-text">
+              <p>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minm veniam.</p>
+              <ul>
+                <li>Apiarist</li>
+                <li>Arborist</li>
+                <li>Dairy/beef farmer</li>
+                <li>Pig farmer</li>
+                <li>Forestry scientist</li>
+                <li>Market gardener</li>
+                <li>Poultry farmer</li>
+                <li>Viticulturist</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="icon-rounded">
+              <i><img src="../../../assets/images/indu-8.png" alt=""></i>
+            </div>
+            <h3>Oil & Gas Extraction</h3>
+            <div class="other-text">
+              <p>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minm veniam.</p>
+              <ul>
+                <li>Apiarist</li>
+                <li>Arborist</li>
+                <li>Dairy/beef farmer</li>
+                <li>Pig farmer</li>
+                <li>Forestry scientist</li>
+                <li>Market gardener</li>
+                <li>Poultry farmer</li>
+                <li>Viticulturist</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="icon-rounded">
+              <i><img src="../../../assets/images/indu-9.png" alt=""></i>
+            </div>
+            <h3>Repair & Maintenance</h3>
+            <div class="other-text">
+              <p>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minm veniam.</p>
+              <ul>
+                <li>Apiarist</li>
+                <li>Arborist</li>
+                <li>Dairy/beef farmer</li>
+                <li>Pig farmer</li>
+                <li>Forestry scientist</li>
+                <li>Market gardener</li>
+                <li>Poultry farmer</li>
+                <li>Viticulturist</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="icon-rounded">
+              <i><img src="../../../assets/images/indu-10.png" alt=""></i>
+            </div>
+            <h3>Seasonal</h3>
+            <div class="other-text">
+              <p>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minm veniam.</p>
+              <ul>
+                <li>Apiarist</li>
+                <li>Arborist</li>
+                <li>Dairy/beef farmer</li>
+                <li>Pig farmer</li>
+                <li>Forestry scientist</li>
+                <li>Market gardener</li>
+                <li>Poultry farmer</li>
+                <li>Viticulturist</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="discover-more text-center"><a href="#"><i class="icon-arrow"></i> Discover more</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work-process gray-bg">
+    <div class="container">
+      <div class="heading text-center">
+        <h2>HOW <span class="blue-text">BluCollr</span> WORKS FOR YOU</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet</p>
+      </div>
+      <div class="pros-cont">
+        <div class="tabs-btn text-center">
+          <button type="button" class="btn employees active">Employees</button>
+          <button type="button" class="btn employers">Employers</button>
+        </div>
+        <div class="tabs-contact">
+          <div id="employees-tabs">
+            <ul>
+              <li>
+                <div class="e-icon">
+                  <img src="../../../assets/images/icon/e-choose-icon.png" alt="">
                 </div>
-              </div>
-            </div>
-            <div class="widget">
-              <div>
-                <a class="title" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Category
-                </a>
-                <div class="collapse show" id="collapseExample1">
-                  <div class="form-group">
-                    <span class="icon-search"></span>
-                    <input type="text" class="form-control" placeholder="Search Here (Autosuggest by Category)">
-                  </div>
-                  <div class="filter-chack-list">
-                    <div class="custom-control custom-checkbox right-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck6">
-                      <label class="custom-control-label" for="customCheck6">Agriculture & Forestry</label>
-                    </div>
-                    <div class="custom-control custom-checkbox right-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck7">
-                      <label class="custom-control-label" for="customCheck7">Construction</label>
-                    </div>
-                    <div class="custom-control custom-checkbox right-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck8">
-                      <label class="custom-control-label" for="customCheck8">Food & Beverage</label>
-                    </div>
-                    <div class="custom-control custom-checkbox right-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck9">
-                      <label class="custom-control-label" for="customCheck9">Manufacturing</label>
-                    </div>
-                    <div class="custom-control custom-checkbox right-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck10">
-                      <label class="custom-control-label" for="customCheck10">Mining</label>
-                    </div>
-                  </div>
+                <div class="e-text">
+                  <h3>Choose Your</h3>
+                  <p>Industry</p>
                 </div>
-              </div>
-            </div>
-            <div class="widget gray-bg">
-              <div>
-                <a class="title" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Hourly Rates
-                </a>
-                <div class="collapse show" id="collapseExample2">
-                  <img src="assets/images/price-filter-img.png" alt="">
+              </li>
+              <li>
+                <div class="e-icon">
+                  <img src="../../../assets/images/icon/e-create-icon.png" alt="">
                 </div>
-              </div>
-            </div>
+                <div class="e-text">
+                  <h3>Create Your</h3>
+                  <p>Free BluCollr Profile</p>
+                </div>
+              </li>
+              <li>
+                <div class="e-icon">
+                  <img src="../../../assets/images/icon/e-search-icon.png" alt="">
+                </div>
+                <div class="e-text">
+                  <h3>Search</h3>
+                  <p>Opportunities</p>
+                </div>
+              </li>
+              <li>
+                <div class="e-icon">
+                  <img src="../../../assets/images/icon/e-connection-icon.png" alt="">
+                </div>
+                <div class="e-text">
+                  <h3>Make a</h3>
+                  <p>Connection / Apply <br/>for Job</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="employers-tabs" style="display: none;">
+            <ul>
+              <li>
+                <div class="e-icon">
+                  <img src="../../../assets/images/icon/e-search-service-icon.png" alt="">
+                </div>
+                <div class="e-text">
+                  <h3>Search a <br/>serviceman</h3>
+                  <p>for your required service</p>
+                </div>
+              </li>
+              <li>
+                <div class="e-icon">
+                  <img src="../../../assets/images/icon/e-detail-icon.png" alt="">
+                </div>
+                <div class="e-text">
+                  <h3>Get detail <br/>information</h3>
+                  <p>about your serviceman</p>
+                </div>
+              </li>
+              <li>
+                <div class="e-icon">
+                  <img src="../../../assets/images/icon/e-create-job-icon.png" alt="">
+                </div>
+                <div class="e-text">
+                  <h3>Create a <br/>Job</h3>
+                  <p>for your serviceman</p>
+                </div>
+              </li>
+              <li>
+                <div class="e-icon">
+                  <img src="../../../assets/images/icon/e-hire-icon.png" alt="">
+                </div>
+                <div class="e-text">
+                  <h3>Hire <br/>your</h3>
+                  <p>Serviceman</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-lg-9 pl-0 right-section">
-          <div class="right-header">
-            <div class="sort-block">
-              <span class="sort-title">sort by: </span>
-              <select data-tags="true" data-placeholder="City" data-allow-clear="true" class="city-list">
-                <option value="CI">Price $-$$</option>
-                <option value="AL">Ahmedabad</option>
-                <option value="WY">Ahmedabad 1</option>
-                <option value="WY">Ahmedabad 2</option>
-                <option value="WY">Ahmedabad 3</option>    
-                <option value="WY">Ahmedabad 4</option>      
-              </select>
-            </div>
-            <div>
-              <a href="#" class="cmn-btn">Post Job</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial-section">
+    <div class="container">
+      <div class="heading text-center">
+        <h2><span class="blue-text">BluCollr</span> User Reviews</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div id="testimonial-slider" class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="pic">
+            <img src="../../../assets/images/testimonial-img/pro-pic1.jpg" alt="">
+          </div>
+          <div class="name">Anna Hathway</div>
+          <p class="testimonial-text">The service was excellent and I am overwhelmed by the output! Lorem ipsum dummy text Lorem ipsum dummy textLorem ipsum dummy. The service was excellent and I am service was excellent.</p>
+          <i class="star-img"><img src="../../../assets/images/star-ic.png" alt=""></i>
+        </div>
+        <div class="item">
+          <div class="pic">
+            <img src="../../../assets/images/testimonial-img/pro-pic2.jpg" alt="">
+          </div>
+          <div class="name">Anna Hathway</div>
+          <p class="testimonial-text">The service was excellent and I am overwhelmed by the output! Lorem ipsum dummy text Lorem ipsum dummy textLorem ipsum dummy. The service was excellent and I am service was excellent.</p>
+          <i class="star-img"><img src="../../../assets/images/star-ic.png" alt=""></i>
+        </div>
+        <div class="item">
+          <div class="pic">
+            <img src="../../../assets/images/testimonial-img/pro-pic3.jpg" alt="">
+          </div>
+          <div class="name">Anna Hathway</div>
+          <p class="testimonial-text">The service was excellent and I am overwhelmed by the output! Lorem ipsum dummy text Lorem ipsum dummy textLorem ipsum dummy. The service was excellent and I am service was excellent.</p>
+          <i class="star-img"><img src="../../../assets/images/star-ic.png" alt=""></i>
+        </div>
+        <div class="item">
+          <div class="pic">
+            <img src="../../../assets/images/testimonial-img/pro-pic4.jpg" alt="">
+          </div>
+          <div class="name">Anna Hathway</div>
+          <p class="testimonial-text">The service was excellent and I am overwhelmed by the output! Lorem ipsum dummy text Lorem ipsum dummy textLorem ipsum dummy. The service was excellent and I am service was excellent.</p>
+          <i class="star-img"><img src="../../../assets/images/star-ic.png" alt=""></i>
+        </div>
+        <div class="item">
+          <div class="pic">
+            <img src="../../../assets/images/testimonial-img/pro-pic5.jpg" alt="">
+          </div>
+          <div class="name">Anna Hathway</div>
+          <p class="testimonial-text">The service was excellent and I am overwhelmed by the output! Lorem ipsum dummy text Lorem ipsum dummy textLorem ipsum dummy. The service was excellent and I am service was excellent.</p>
+          <i class="star-img"><img src="../../../assets/images/star-ic.png" alt=""></i>
+        </div>
+        <div class="item">
+          <div class="pic">
+            <img src="../../../assets/images/testimonial-img/pro-pic1.jpg" alt="">
+          </div>
+          <div class="name">Anna Hathway</div>
+          <p class="testimonial-text">The service was excellent and I am overwhelmed by the output! Lorem ipsum dummy text Lorem ipsum dummy textLorem ipsum dummy. The service was excellent and I am service was excellent.</p>
+          <i class="star-img"><img src="../../../assets/images/star-ic.png" alt=""></i>
+        </div>
+        <div class="item">
+          <div class="pic">
+            <img src="../../../assets/images/testimonial-img/pro-pic2.jpg" alt="">
+          </div>
+          <div class="name">Anna Hathway</div>
+          <p class="testimonial-text">The service was excellent and I am overwhelmed by the output! Lorem ipsum dummy text Lorem ipsum dummy textLorem ipsum dummy. The service was excellent and I am service was excellent.</p>
+          <i class="star-img"><img src="../../../assets/images/star-ic.png" alt=""></i>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <section class="mission-section">
+    <div class="container">
+      <div class="heading text-center">
+        <h2>Our Mission</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+      <div class="mission-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+        <p>Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus lus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci.</p>
+      </div>
+      <div class="discover-more"><a href="#"><i class="icon-arrow"></i> Discover more</a></div>
+    </div>
+  </section>
+
+  <section class="working-people-section">
+    <div class="container">
+      <div class="heading text-center">
+        <h2>Changing the Way Working People Find Work</h2>
+      </div>
+      <div class="work-people-content">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="work-item">
+              <div class="item-img">
+                <img src="../../../assets/images/work-img1.jpg" alt="">
+              </div>
+              <div class="item-text">
+                <h3>Say Goodbye to <span>Classified Ads</span></h3>
+                <p>Find the right people for the job, when you need them. Whether it’s for a day, a week, or long-term.</p>
+              </div>
             </div>
           </div>
-          <div class="right-inner">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="user-listing default-transition">
-                  <div class="profile-img text-center">
-                    <img src="assets/images/testimonial-img/pro-pic4.jpg" alt="">
-                    <div class="reating">
-                      <i class="fas fa-star"></i>
-                      3
-                    </div>
-                  </div>
-                  <div class="user-details text-center">
-                    <span class="name">Marie Ann</span>
-                    <span class="country">New York</span>
-                    <span class="subject">Construction</span>
-                  </div>
-                  <div class="user-hour-time">
-                    <div class="hour-dollar d-flex align-items-center">
-                      <img src="assets/images/dollar-currency-icon.jpg" alt="">
-                      $45 / Hour
-                    </div>
-                    <div class="times-hired d-flex align-items-center">
-                      <span class="icon-hire-ic"></span>91 times Hired
-                    </div>
-                  </div>
-                  <div class="view-button text-center">
-                    <a href="#" class="btn view-pro">View Profile</a>
-                    <a href="javascript:;" class="btn hire-me" data-toggle="modal" data-target="#exampleModal">Hire Me</a>
-                  </div>
-                  <div class="user-intro">
-                    <a href="#" class="intro">
-                      <img src="assets/images/intro-icon.png" alt="">
-                      <span>Intro</span>
-                    </a>
-                    <a href="#" class="connect">
-                      <img src="assets/images/connect-icon.png" alt="">
-                      <span>Connect</span>
-                    </a>
-                    <a href="#" class="comments">
-                      <img src="assets/images/comment-icon.png" alt="">
-                      <span>20 Comment</span>
-                    </a>
-                  </div>
-                </div>
+          <div class="col-lg-3">
+            <div class="work-item">
+              <div class="item-img">
+                <img src="../../../assets/images/work-img2.jpg" alt="">
               </div>
-              <div class="col-lg-4">
-                <div class="user-listing default-transition">
-                  <div class="profile-img text-center">
-                    <img src="assets/images/testimonial-img/pro-pic5.jpg" alt="">
-                    <div class="reating">
-                      <i class="fas fa-star"></i>
-                      4.5
-                    </div>
-                  </div>
-                  <div class="user-details text-center">
-                    <span class="name">Jill Young</span>
-                    <span class="country">Los Angeles</span>
-                    <span class="subject">Agriculture & Forestry, Construction</span>
-                  </div>
-                  <div class="user-hour-time">
-                    <div class="hour-dollar d-flex align-items-center">
-                      <img src="assets/images/dollar-currency-icon.jpg" alt="">
-                      $45 / Hour
-                    </div>
-                    <div class="times-hired d-flex align-items-center">
-                      <span class="icon-hire-ic"></span>91 times Hired
-                    </div>
-                  </div>
-                  <div class="view-button text-center">
-                    <a href="#" class="btn view-pro">View Profile</a>
-                    <a href="javascript:;" class="btn hire-me">Hire Me</a>
-                  </div>
-                  <div class="user-intro">
-                    <a href="#" class="intro">
-                      <img src="assets/images/intro-icon.png" alt="">
-                      <span>Intro</span>
-                    </a>
-                    <a class="pending">
-                      <i class="fas fa-spin"><img src="assets/images/pending-icon.png" alt=""></i>
-                      <span>Pending</span>
-                    </a>
-                    <a href="#" class="comments">
-                      <img src="assets/images/comment-icon.png" alt="">
-                      <span>20 Comment</span>
-                    </a>
-                  </div>
-                </div>
+              <div class="item-text">
+                <h3>The Right <span>People</span></h3>
+                <p>Find the right people for the job, when you need them. Whether it’s for a day, a week, or long-term.</p>
               </div>
-              <div class="col-lg-4">
-                <div class="user-listing default-transition">
-                  <div class="profile-img text-center">
-                    <img src="assets/images/testimonial-img/pro-pic2.jpg" alt="">
-                    <div class="reating">
-                      <i class="fas fa-star"></i>
-                      3.5
-                    </div>
-                  </div>
-                  <div class="user-details text-center">
-                    <span class="name">Adelbert Cold</span>
-                    <span class="country">New York</span>
-                    <span class="subject">New York</span>
-                  </div>
-                  <div class="user-hour-time">
-                    <div class="hour-dollar d-flex align-items-center">
-                      <img src="assets/images/dollar-currency-icon.jpg" alt="">
-                      $45 / Hour
-                    </div>
-                    <div class="times-hired d-flex align-items-center">
-                      <span class="icon-hire-ic"></span>91 times Hired
-                    </div>
-                  </div>
-                  <div class="view-button text-center">
-                    <a href="#" class="btn view-pro">View Profile</a>
-                    <a href="javascript:;" class="btn hire-me">Hire Me</a>
-                  </div>
-                  <div class="user-intro">
-                    <a href="#" class="intro">
-                      <img src="assets/images/intro-icon.png" alt="">
-                      <span>Intro</span>
-                    </a>
-                    <a href="#" class="connect">
-                      <img src="assets/images/connect-icon.png" alt="">
-                      <span>Connect</span>
-                    </a>
-                    <a href="#" class="comments">
-                      <img src="assets/images/comment-icon.png" alt="">
-                      <span>20 Comment</span>
-                    </a>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="work-item">
+              <div class="item-img">
+                <img src="../../../assets/images/work-img3.jpg" alt="">
               </div>
-              <div class="col-lg-4">
-                <div class="user-listing default-transition">
-                  <div class="profile-img text-center">
-                    <img src="assets/images/testimonial-img/pro-pic6.jpg" alt="">
-                    <div class="reating">
-                      <i class="fas fa-star"></i>
-                      4
-                    </div>
-                  </div>
-                  <div class="user-details text-center">
-                    <span class="name">Joanne Green</span>
-                    <span class="country">Austin</span>
-                    <span class="subject">Construction</span>
-                  </div>
-                  <div class="user-hour-time">
-                    <div class="hour-dollar d-flex align-items-center">
-                      <img src="assets/images/dollar-currency-icon.jpg" alt="">
-                      $45 / Hour
-                    </div>
-                    <div class="times-hired d-flex align-items-center">
-                      <span class="icon-hire-ic"></span>91 times Hired
-                    </div>
-                  </div>
-                  <div class="view-button text-center">
-                    <a href="#" class="btn view-pro">View Profile</a>
-                    <a href="javascript:;" class="btn hire-me">Hire Me</a>
-                  </div>
-                  <div class="user-intro">
-                    <a href="#" class="intro">
-                      <img src="assets/images/intro-icon.png" alt="">
-                      <span>Intro</span>
-                    </a>
-                    <a href="#" class="connect">
-                      <img src="assets/images/connect-icon.png" alt="">
-                      <span>Connect</span>
-                    </a>
-                    <a href="#" class="comments">
-                      <img src="assets/images/comment-icon.png" alt="">
-                      <span>20 Comment</span>
-                    </a>
-                  </div>
-                </div>
+              <div class="item-text">
+                <h3>The Right <span>Jobs</span></h3>
+                <p>Find the right people for the job, when you need them. Whether it’s for a day, a week, or long-term.</p>
               </div>
-              <div class="col-lg-4">
-                <div class="user-listing default-transition">
-                  <div class="profile-img text-center">
-                    <img src="assets/images/testimonial-img/pro-pic7.jpg" alt="">
-                    <div class="reating">
-                      <i class="fas fa-star"></i>
-                      3
-                    </div>
-                  </div>
-                  <div class="user-details text-center">
-                    <span class="name">Marie Ann</span>
-                    <span class="country">San Jose</span>
-                    <span class="subject">Construction</span>
-                  </div>
-                  <div class="user-hour-time">
-                    <div class="hour-dollar d-flex align-items-center">
-                      <img src="assets/images/dollar-currency-icon.jpg" alt="">
-                      $45 / Hour
-                    </div>
-                    <div class="times-hired d-flex align-items-center">
-                      <span class="icon-hire-ic"></span>91 times Hired
-                    </div>
-                  </div>
-                  <div class="view-button text-center">
-                    <a href="#" class="btn view-pro">View Profile</a>
-                    <a href="javascript:;" class="btn hire-me">Hire Me</a>
-                  </div>
-                  <div class="user-intro">
-                    <a href="#" class="intro">
-                      <img src="assets/images/intro-icon.png" alt="">
-                      <span>Intro</span>
-                    </a>
-                    <a href="#" class="connect">
-                      <img src="assets/images/connect-icon.png" alt="">
-                      <span>Connect</span>
-                    </a>
-                    <a href="#" class="comments">
-                      <img src="assets/images/comment-icon.png" alt="">
-                      <span>20 Comment</span>
-                    </a>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="work-item">
+              <div class="item-img">
+                <img src="../../../assets/images/work-img4.jpg" alt="">
               </div>
-              <div class="col-lg-4">
-                <div class="user-listing default-transition">
-                  <div class="profile-img text-center">
-                    <img src="assets/images/testimonial-img/pro-pic8.jpg" alt="">
-                    <div class="reating">
-                      <i class="fas fa-star"></i>
-                      3
-                    </div>
-                  </div>
-                  <div class="user-details text-center">
-                    <span class="name">Marie Ann</span>
-                    <span class="country">New York</span>
-                    <span class="subject">Construction</span>
-                  </div>
-                  <div class="user-hour-time">
-                    <div class="hour-dollar d-flex align-items-center">
-                      <img src="assets/images/dollar-currency-icon.jpg" alt="">
-                      $45 / Hour
-                    </div>
-                    <div class="times-hired d-flex align-items-center">
-                      <span class="icon-hire-ic"></span>91 times Hired
-                    </div>
-                  </div>
-                  <div class="view-button text-center">
-                    <a href="#" class="btn view-pro">View Profile</a>
-                    <a href="#" class="btn hire-me">Hire Me</a>
-                  </div>
-                  <div class="user-intro">
-                    <a href="#" class="intro">
-                      <img src="assets/images/intro-icon.png" alt="">
-                      <span>Intro</span>
-                    </a>
-                    <a href="#" class="connect">
-                      <img src="assets/images/connect-icon.png" alt="">
-                      <span>Connect</span>
-                    </a>
-                    <a href="#" class="comments">
-                      <img src="assets/images/comment-icon.png" alt="">
-                      <span>20 Comment</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="user-listing default-transition">
-                  <div class="profile-img text-center">
-                    <img src="assets/images/testimonial-img/pro-pic9.jpg" alt="">
-                    <div class="reating">
-                      <i class="fas fa-star"></i>
-                      3
-                    </div>
-                  </div>
-                  <div class="user-details text-center">
-                    <span class="name">Marie Ann</span>
-                    <span class="country">New York</span>
-                    <span class="subject">Construction</span>
-                  </div>
-                  <div class="user-hour-time">
-                    <div class="hour-dollar d-flex align-items-center">
-                      <img src="assets/images/dollar-currency-icon.jpg" alt="">
-                      $45 / Hour
-                    </div>
-                    <div class="times-hired d-flex align-items-center">
-                      <span class="icon-hire-ic"></span>91 times Hired
-                    </div>
-                  </div>
-                  <div class="view-button text-center">
-                    <a href="#" class="btn view-pro">View Profile</a>
-                    <a href="#" class="btn hire-me">Hire Me</a>
-                  </div>
-                  <div class="user-intro">
-                    <a href="#" class="intro">
-                      <img src="assets/images/intro-icon.png" alt="">
-                      <span>Intro</span>
-                    </a>
-                    <a href="#" class="connect">
-                      <img src="assets/images/connect-icon.png" alt="">
-                      <span>Connect</span>
-                    </a>
-                    <a href="#" class="comments">
-                      <img src="assets/images/comment-icon.png" alt="">
-                      <span>20 Comment</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="user-listing default-transition">
-                  <div class="profile-img text-center">
-                    <img src="assets/images/testimonial-img/pro-pic10.jpg" alt="">
-                    <div class="reating">
-                      <i class="fas fa-star"></i>
-                      3
-                    </div>
-                  </div>
-                  <div class="user-details text-center">
-                    <span class="name">Marie Ann</span>
-                    <span class="country">New York</span>
-                    <span class="subject">Construction</span>
-                  </div>
-                  <div class="user-hour-time">
-                    <div class="hour-dollar d-flex align-items-center">
-                      <img src="assets/images/dollar-currency-icon.jpg" alt="">
-                      $45 / Hour
-                    </div>
-                    <div class="times-hired d-flex align-items-center">
-                      <span class="icon-hire-ic"></span>91 times Hired
-                    </div>
-                  </div>
-                  <div class="view-button text-center">
-                    <a href="#" class="btn view-pro">View Profile</a>
-                    <a href="#" class="btn hire-me">Hire Me</a>
-                  </div>
-                  <div class="user-intro">
-                    <a href="#" class="intro">
-                      <img src="assets/images/intro-icon.png" alt="">
-                      <span>Intro</span>
-                    </a>
-                    <a href="#" class="connect">
-                      <img src="assets/images/connect-icon.png" alt="">
-                      <span>Connect</span>
-                    </a>
-                    <a href="#" class="comments">
-                      <img src="assets/images/comment-icon.png" alt="">
-                      <span>20 Comment</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="user-listing default-transition">
-                  <div class="profile-img text-center">
-                    <img src="assets/images/testimonial-img/pro-pic11.jpg" alt="">
-                    <div class="reating">
-                      <i class="fas fa-star"></i>
-                      3
-                    </div>
-                  </div>
-                  <div class="user-details text-center">
-                    <span class="name">Marie Ann</span>
-                    <span class="country">New York</span>
-                    <span class="subject">Construction</span>
-                  </div>
-                  <div class="user-hour-time">
-                    <div class="hour-dollar d-flex align-items-center">
-                      <img src="assets/images/dollar-currency-icon.jpg" alt="">
-                      $45 / Hour
-                    </div>
-                    <div class="times-hired d-flex align-items-center">
-                      <span class="icon-hire-ic"></span>91 times Hired
-                    </div>
-                  </div>
-                  <div class="view-button text-center">
-                    <a href="#" class="btn view-pro">View Profile</a>
-                    <a href="#" class="btn hire-me">Hire Me</a>
-                  </div>
-                  <div class="user-intro">
-                    <a href="#" class="intro">
-                      <img src="assets/images/intro-icon.png" alt="">
-                      <span>Intro</span>
-                    </a>
-                    <a href="#" class="connect">
-                      <img src="assets/images/connect-icon.png" alt="">
-                      <span>Connect</span>
-                    </a>
-                    <a href="#" class="comments">
-                      <img src="assets/images/comment-icon.png" alt="">
-                      <span>20 Comment</span>
-                    </a>
-                  </div>
-                </div>
+              <div class="item-text">
+                <h3>Get Your Foot <span>in the Door</span></h3>
+                <p>Find the right people for the job, when you need them. Whether it’s for a day, a week, or long-term.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </main>
+  </section>
+</main>
+ <footer id="footer">
+<div class="container">
+  <div class="footer-link">
+    <div class="row">
+      <div class="col-lg-2">
+        <ul>
+          <li class="title">Company</li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2">
+        <ul>
+          <li class="title">Support</li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2">
+        <ul>
+          <li class="title">Business</li>
+          <li><a href="#">Advertise with Us</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2">
+        <ul>
+          <li class="title">BluCollr Employee</li>
+          <li><a href="#">How it Works?</a></li>
+          <li><a href="#">Employee Testimonials</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2">
+        <ul>
+          <li class="title">BluCollr Employer</li>
+          <li><a href="#">How it Works?</a></li>
+          <li><a href="#">Employer Testimonials</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2">
+        <ul>
+          <li class="title">Get Social</li>              
+        </ul>
+        <div class="social-icn">
+          <a href="#" class="icon-fb-ic"></a>
+          <a href="#" class="icon-tw-ic"></a>
+          <a href="#" class="icon-insta-ic"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright text-center">
+    <img src="../../../assets/images/black-logo.png" alt="">
+    <p>© 2019 Copyright Blucollr.com. All Rights Reserved.</p>
+  </div>
+</div>
+</footer>
