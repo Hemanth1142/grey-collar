@@ -15,23 +15,28 @@
           <form class="login-form" [formGroup]="signUpForm"  (ngSubmit)="onSubmit()" >
             <div class="d-flex form-check-inline justify-content-center mr-0">
               <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" class="custom-control-input" formControlName="user_type" id="customRadio" name="user_type" value="Employee" checked>
+                <input type="radio" class="custom-control-input" formControlName="userType" id="customRadio" name="userType" value="Employee" checked>
                 <label class="custom-control-label" for="customRadio">Employee</label>
               </div>
               <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" class="custom-control-input" formControlName="user_type" id="customRadio1" name="user_type" value="Employer">
+                <input type="radio" class="custom-control-input" formControlName="userType" id="customRadio1" name="userType" value="Employer">
                 <label class="custom-control-label" for="customRadio1">Employer</label>
               </div>
+              <span *ngIf="userType.invalid" >Please select user type</span>
             </div>
             <div class="form-row justify-content-between">
               <div class="form-group">
                 <label for="exampleInputEmail1"  class="bmd-label-floating">Name  <sup>*</sup></label>
                 <input type="text" class="form-control" formControlName="name" name="name"  id="exampleInputEmail1" >
+                <span *ngIf="name.invalid && name.touched" >Please enter name</span>
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail2" class="bmd-label-floating">Email  <sup>*</sup></label>
                 <input type="email" class="form-control" formControlName="email" id="exampleInputEmail2">
-                <span *ngIf="email.invalid" >Please enter email</span>
+                <div *ngIf="email.invalid && email.touched" >
+                  <span *ngIf="email.value == ''" >Please enter email</span>
+                  <span *ngIf="email.invalid && email.value !=''" >Please enter valid email</span>
+                </div>
                 </div>  
             </div>
             <div class="form-row justify-content-between">
@@ -39,7 +44,7 @@
                   <label for="exampleInputEmail3" class="bmd-label-floating">Date of Birth  <sup>*</sup></label>
                   <input type="text" class="form-control" formControlName="dob" id="exampleInputEmail3">
                 </div>
-              
+              <span *ngIf="dob.invalid && dob.touched" >Please enter date of birth</span>                
               <div class="form-group">
                 <select data-tags="true" data-placeholder="City" formControlName="gender" data-allow-clear="true" class="city-list">
                           <option value="CI">Gender</option>    
@@ -47,17 +52,19 @@
                           <option value="AL">Female</option>
                         </select>
               </div>
+              <span *ngIf="gender.invalid && gender.touched" >Please select gender</span>
             </div>
             <div class="form-row justify-content-between">
                 <div class="form-group">
                   <label for="exampleInputEmail4" class="bmd-label-floating">Password <sup>*</sup></label>
                   <input type="password" class="form-control" formControlName="password" id="exampleInputEmail4">
-                  
+                  <span *ngIf="password.invalid && password.touched" >Please enter password</span>                  
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail5" class="bmd-label-floating">Confirm Password <sup>*</sup></label>
                   <input type="password" class="form-control" formControlName= "confirmPassword" id="exampleInputEmail5">
-                  
+                  <span *ngIf="confirmPassword.invalid && confirmPassword.touched" >Please enter confirm password</span>                  
+                  <span *ngIf="signUpForm.errors.notMatched" >Password doesnot match</span>                  
                 </div>
               
               
